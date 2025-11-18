@@ -1,0 +1,118 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "John",
+      "department": "HR",
+      "email": "john@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Jane",
+      "department": "Finance",
+      "email": "jane@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Raju",
+      "department": "Marketing",
+      "email": "raju@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Gathvik",
+      "department": "Employee",
+      "email": "gathvik@gmail.com"
+    },
+    {
+      "id": "1762410673552",
+      "name": "Leelasri",
+      "department": "Employee",
+      "email": "leela@gmail.com"
+    },
+    {
+      "id": "1762419069517",
+      "name": "Harshitha",
+      "email": "harshitha@gmail.com",
+      "department": "employee"
+    },
+    {
+      "id": "1762419111677",
+      "name": "Harshitha",
+      "email": "Harshitha@gmail.com",
+      "department": "General"
+    }
+  ],
+  "leaves": [
+    {
+      "id": "1",
+      "employeeId": "1",
+      "reason": "Personal work",
+      "days": 2,
+      "status": "Rejected"
+    },
+    {
+      "id": "2",
+      "employeeId": "2",
+      "reason": "Family emergency",
+      "days": 5,
+      "status": "Approved"
+    },
+    {
+      "id": "3",
+      "employeeId": "3",
+      "reason": "Emergency Leave",
+      "days": 3,
+      "status": "Approved"
+    },
+    {
+      "id": "4",
+      "employeeId": "4",
+      "reason": "Due to fever sick leave",
+      "days": 2,
+      "status": "Approved"
+    },
+    {
+      "id": "5",
+      "employeeId": "1762410673552",
+      "reason": "Sick Leave",
+      "days": 2,
+      "status": "Approved"
+    },
+    {
+      "id": "6",
+      "employeeId": "1762410673552",
+      "reason": "Cold / Flu",
+      "days": 4,
+      "status": "Pending"
+    },
+    {
+      "id": "7",
+      "employeeId": "1762410673552",
+      "reason": "Family Leave",
+      "days": 3,
+      "status": "Pending"
+    },
+    {
+      "id": "8",
+      "employeeId": "1762410673552",
+      "reason": "Fever",
+      "days": 2,
+      "status": "Pending"
+    },
+    {
+      "id": "1762418166023",
+      "employeeId": "1762410673552",
+      "reason": "cold and flu",
+      "days": 2,
+      "status": "Pending"
+    },
+    {
+      "id": "1762419132021",
+      "employeeId": "1762419111677",
+      "reason": "Family Leave",
+      "days": 4,
+      "status": "Approved"
+    }
+  ]
+}

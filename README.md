@@ -1,16 +1,165 @@
-# React + Vite
+📊 HR Portal Application
+📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The HR Portal Application is a web-based system that helps HR teams manage employees efficiently.
+It provides features such as employee management, authentication, and department tracking.
 
-Currently, two official plugins are available:
+The application is built using React for the frontend and React Query for server state management, making API data fetching, caching, and synchronization efficient.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## React Compiler
+🔐 User Authentication (Login / Signup)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👨‍💼 Employee Dashboard
 
-## Expanding the ESLint configuration
+📋 Employee List Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+➕ Add New Employees
+
+🏢 Department Management
+
+🛡 Protected Routes
+
+⚡ Fast API Data Fetching with React Query
+
+🔄 Automatic Data Refetching and Caching
+
+🛠 Tech Stack
+Frontend
+
+⚛️ React
+
+⚡ Vite
+
+🔄 TanStack Query
+
+🌐 JSON Server
+
+Other Tools
+
+📦 npm
+
+🧑‍💻 VS Code
+
+🗂 Git & GitHub
+
+📂 Project Structure
+HR-PORTAL
+│
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── EmployeeDashboard.jsx
+│   │   ├── HRDashboard.jsx
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── services
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── db.json
+├── index.html
+├── package.json
+└── README.md
+📊 API Data Example
+
+The application uses a mock API with JSON Server.
+
+Example employee data:
+
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "John",
+      "department": "HR",
+      "email": "john@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Jane",
+      "department": "Finance",
+      "email": "jane@example.com"
+    }
+  ]
+}
+⚙️ Installation & Setup
+1️⃣ Clone Repository
+https://github.com/LeelasriNekkala/HR-Portal.git
+2️⃣ Install Dependencies
+npm install
+3️⃣ Start JSON Server
+npx json-server --watch db.json --port 3000
+4️⃣ Start React Application
+npm run dev
+🔄 React Query Usage
+
+The project uses React Query for server state management.
+
+Example:
+
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+
+const fetchEmployees = async () => {
+  const { data } = await axios.get("http://localhost:3000/employees");
+  return data;
+};
+
+const { data, isLoading } = useQuery({
+  queryKey: ["employees"],
+  queryFn: fetchEmployees,
+});
+
+Benefits:
+
+Automatic caching
+
+Background refetching
+
+Loading & error states
+
+Efficient API management
+
+📸 Screenshots
+
+Add your project UI screenshots here.
+
+screenshots/
+login.png
+dashboard.png
+employees.png
+
+Example:
+
+![Login](screenshots/login.png)
+![Dashboard](screenshots/dashboard.png)
+🎯 Future Improvements
+
+Role-based access control
+
+Employee attendance tracking
+
+Leave management system
+
+Backend integration with Node.js and MongoDB
+
+Deployment with cloud services
+
+👩‍💻 Author
+
+Leela Sri
+MERN Stack Developer
+
+⭐ Conclusion
+
+This project demonstrates:
+
+Modern React application architecture
+
+Efficient server state management with React Query
+
+Clean component-based development
